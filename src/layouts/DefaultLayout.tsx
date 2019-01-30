@@ -1,4 +1,4 @@
-import { Flex, Serif } from "@artsy/palette"
+import { Flex, FlexProps, Serif } from "@artsy/palette"
 import { Sidebar } from "components/Sidebar"
 import { StatusBadge } from "components/StatusBadge"
 import { graphql } from "gatsby"
@@ -27,7 +27,7 @@ export default function DocsLayout(props) {
   )
 }
 
-export const ContentArea = styled(Flex).attrs({
+export const ContentArea = styled(Flex).attrs<FlexProps>({
   flexDirection: "column",
   pt: 4,
   px: 6,
